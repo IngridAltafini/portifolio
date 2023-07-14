@@ -246,7 +246,7 @@ section {
 
 .home-img img {
   position: absolute;
-  bottom: 0;
+  bottom: 16px;
   right: 58px;
   width: 28%;
   pointer-events: none;
@@ -506,7 +506,19 @@ span {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .navbar a:nth-child(1),
+  .navbar a:nth-child(2),
+  .navbar a:nth-child(3),
+  .navbar a:nth-child(4),
+  .navbar a:nth-child(5) {
+    color: var(--main-color);
+  }
+
+  .navbar a.active::before {
+    background: var(--main-color);
+  }
+
   html {
     font-size: 55%;
   }
@@ -523,9 +535,21 @@ span {
   .home .profession-container .overlay {
     right: -9rem;
   }
+
+  .home-img img {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
+  .navbar a:nth-child(1),
+  .navbar a:nth-child(2),
+  .navbar a:nth-child(3),
+  .navbar a:nth-child(4),
+  .navbar a:nth-child(5) {
+    color: var(--main-color);
+  }
+
   .header {
     padding: 2rem 3%;
   }
@@ -545,7 +569,10 @@ span {
 
 @media (max-width: 991px) {
   .navbar a:nth-child(1),
-  .navbar a:nth-child(2) {
+  .navbar a:nth-child(2),
+  .navbar a:nth-child(3),
+  .navbar a:nth-child(4),
+  .navbar a:nth-child(5) {
     color: var(--main-color);
   }
 
@@ -561,7 +588,4 @@ span {
     right: -39.5rem;
   }
 
-  .home-img img {
-    display: none;
-  }
 } 
