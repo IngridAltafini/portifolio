@@ -688,14 +688,14 @@ span {
 
   .home .profession-container .profession-box {
     position: fixed;
-    top: 60%;
+    top: 54%;
     left: 0;
     border-radius: 0;
     width: 100%;
   }
 
   .home .profession-box .profession {
-    padding: 0 13px;
+    padding: 0 40px;
     left: auto;
     transform-origin: 0;
   }
@@ -763,7 +763,7 @@ span {
   }
 
   .home .profession-box .profession:nth-child(1) {
-    transform: rotate(-90deg) translate(-110px, -220px);
+    transform: rotate(-90deg) translate(-96px, -220px);
   }
 
   .home .profession-box .profession:nth-child(2) {
